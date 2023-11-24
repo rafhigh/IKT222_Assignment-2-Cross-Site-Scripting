@@ -11,8 +11,8 @@ Before you begin, make sure you have [Docker](https://www.docker.com/get-started
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/rafhigh/IKT222_Assignment-2-Cross-Site-Scripting.git
+cd IKT222_Assignment-2-Cross-Site-Scripting
 ```
 
 ### 2. Build the docker image
