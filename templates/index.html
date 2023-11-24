@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="background-image">
+    <h1 style="background-color: rgba(230, 230, 250, 0.8);">Welcome To My Blog!</h1>
+    <ul>
+        {% for post in posts %}
+            <li><a href="{{ url_for('post', post_id=loop.index) }}">{{ post['title'] }}</a></li>
+            <p></pstyle>>{{ post['content'] }}</p>
+        {% endfor %}
+    </ul>
+    <ul>
+        <p style="background-color: lavender;"><a href="{{ url_for('create') }}">Create a New Post</a></p>
+        <p style="background-color: lavender;"><a href="{{ url_for('clear') }}">Clear All Posts</a></p> 
+    </ul>
+</body>
+</html>
