@@ -22,12 +22,12 @@ docker build -t webapp:latest .
 ```
 
 
-### 2. Run the docker container
+### 3. Run the docker container
 
 ```bash
 docker run -d -p 5000:5000 webapp:latest
 ```
 
-### 2. Access the web application
+### 4. Access the web application
 Open your web browser and navigate to http://localhost:5000 or http://0.0.0.0:5000 to view the running application.
 
